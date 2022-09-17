@@ -1,0 +1,49 @@
+{
+  "name": "my-rm-dir",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Quickly delete large folders/files, such as `node_modules` with thousands of small files",
+  "keywords": [
+    "my-rm-dir",
+    "rm-dir"
+  ],
+  "author": "xxxxue <1659809758@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/xxxxue/my-rm-dir#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxxue/my-rm-dir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xxxxue/my-rm-dir/issues"
+  },
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "my-rm-dir": "/build/index.js"
+  },
+  "preferGlobal": true,
+  "main": "/build/index.js",
+  "scripts": {
+    "dev": "npm run build && npx tsc --watch",
+    "start": "npm run build && node build/index.js",
+    "build": "npm run cl && tsc",
+    "cl": "rimraf ./build",
+    "npm-login": "npm login --registry=https://registry.npmjs.org",
+    "npm-publish": "npm publish --registry=https://registry.npmjs.org",
+    "dev-link": "npm link",
+    "dev-unlink": "npm uninstall -g my-rm-dir"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "@types/rimraf": "^3.0.2",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "press-any-key": "^0.1.1",
+    "round-to": "^6.0.0",
+    "rimraf": "^3.0.2"
+  }
+}

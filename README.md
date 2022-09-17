@@ -1,4 +1,4 @@
-# ⚡ JsRmDir
+# ⚡ MyRmDir
 
 > Quickly delete large folders/files, such as `node_modules` with thousands of small files
 
@@ -25,11 +25,11 @@ Can be added to the Windows right-click menu registry, the operation is more con
 # 📦 Install
 
 ```bash
-npm install -g js-rm-dir
+npm install -g my-rm-dir
 ```
 
 ```bash
-js-rm-dir .\node_modules
+my-rm-dir .\node_modules
 ```
 
 # Speed test
@@ -51,9 +51,9 @@ The following test data comes from removing the same `node_modules`
 ## Install
 
 - Download files in `release`
-- Execute `where.exe js-rm-dir` in `cmd` to get `local address`
+- Execute `where.exe my-rm-dir` in `cmd` to get `local address`
 - Open `script/install.reg` in Notepad
-- Modify `E:\\Software\\NodeJs\\js-rm-dir` to `local address`. ( `\\` is very important)
+- Modify `E:\\Software\\NodeJs\\my-rm-dir` to `local address`. ( `\\` is very important)
 - Save after modification, and double-click to execute `install.reg`
 
 ## Uninstall
