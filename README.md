@@ -50,20 +50,23 @@ The following test data comes from removing the same `node_modules`
 
 ## Install
 
-- Download files in `release`
-- Execute `where.exe my-rm-dir` in `cmd` to get `local address`
+- Execute `where.exe my-rm-dir` in `cmd` to get `local path`
 - Open `script/install.reg` in Notepad
-- Modify `E:\\Software\\NodeJs\\my-rm-dir` to `local address`. ( `\\` is very important)
+- Modify `E:\\Software\\NodeJs\\my-rm-dir` to `local path`. ( `\\` is very important)
 - Save after modification, and double-click to execute `install.reg`
 
 ## Uninstall
 
 Double-click `uninstall.reg` in the `script` directory
 
+## Delete multiple files at the same time
 
+use `script/delete_select_files.ahk`
 
 # Screenshots
 
 ![image-20220915214510812](img.assets/image-20220915214510812.png)
 
 ![image-20220917193123079](img.assets/image-20220917193123079.png)
+
+![image-20250205012040.png](img.assets/image-20250205012040.png)

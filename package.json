@@ -1,6 +1,6 @@
 {
   "name": "my-rm-dir",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "type": "module",
   "description": "Quickly delete large folders/files, such as `node_modules` with thousands of small files",
   "keywords": [
@@ -36,14 +36,15 @@
     "dev-unlink": "npm uninstall -g my-rm-dir"
   },
   "devDependencies": {
-    "@types/node": "^18.7.16",
+    "@types/node": "^22.13.1",
     "@types/rimraf": "^3.0.2",
-    "typescript": "^4.8.2"
+    "typescript": "^5.7.3"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
-    "press-any-key": "^0.1.1",
-    "round-to": "^6.0.0",
-    "rimraf": "^3.0.2"
+    "@inquirer/prompts": "^7.3.1",
+    "chalk": "^5.4.1",
+    "press-any-key": "^1.1.0",
+    "rimraf": "^3.0.2",
+    "round-to": "^6.0.0"
   }
 }

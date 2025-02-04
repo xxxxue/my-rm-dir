@@ -27,6 +27,7 @@
 ```bash
 npm install -g my-rm-dir
 ```
+
 ```bash
 my-rm-dir .\node_modules
 ```
@@ -43,13 +44,12 @@ my-rm-dir .\node_modules
 
 # 注册到右键菜单
 
-> 建议使用 [ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager) 来管理右键菜单, 可视化操作更方便. 
+> 建议使用 [ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager) 来管理右键菜单, 可视化操作更方便.
 >
 > 直接 新建项 , 选择图标 ,设置命令 就可以了.
 
 ## 写入注册表
 
-- 在 `release` 中下载文件
 - 在 `cmd` 中执行 `where.exe my-rm-dir` , 拿到 `本机地址`
 - 记事本打开 `script/install.reg`
 - 修改 `E:\\Software\\NodeJs\\my-rm-dir` 为 `本机地址`。 ( `\\` 非常重要)
@@ -58,6 +58,10 @@ my-rm-dir .\node_modules
 ## 卸载注册表
 
 双击 `script` 目录的 `uninstall.reg`
+
+## 同时删除多个文件
+
+使用 `script/delete_select_files.ahk`
 
 # 截图
 
